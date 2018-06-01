@@ -1,0 +1,141 @@
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.navbar {
+		padding: 1vh 16vw;
+	}
+	.container-fluid {
+		padding-left: 16vw;
+		padding-right: 16vw;
+	}
+}
+
+body {
+	position: relative; /* For scroll-spy */
+	color: #212121;
+	overflow-y: scroll;
+	scroll-behavior: smooth; /* WORKS IN FIREFOX, NOT CHROME ??? */
+}
+
+/* Exclude elements from being selected (!important didn't work) */
+p:not(.exclude) {
+	color: #757575;
+}
+
+#navbar, #footer {
+	background: #283371;
+}
+
+.btn {
+	background: #03A9F4;
+}
+
+.jumbotron-fluid {
+	background: url(img/pexels-photo-1102797.jpg) center;
+	background-size: cover;
+	min-height: 70vh;
+	text-align: center;
+/*	padding-top: 250px; <- use FLEX instead of this*/
+	color: #fff !important; /* <- Why isn't this overwriting the p color? */
+	text-shadow: 2px 2px 3px black;
+	margin-bottom: 0; /* Removes the default bootstrap jumbotron bottom margin that adds white space */
+}
+
+.jumbotron-fluid background {
+	filter: blur(10px);
+}
+
+.container-fluid:not(.exclude) {
+	min-height: 60vh;
+}
+
+/*Centering VERTICALLY with FLEX (instead of adding padding-top*/
+#home, #about {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#work, #tech, #contact, #footer {
+	padding-top: 50px;
+	padding-bottom: 60px;
+	text-align: center;
+}
+
+#work, #contact {
+	background: #dcdcdc;
+}
+
+#contact form {
+	padding: 60px 80px;
+	max-width: 620px;
+	box-shadow: 3px 3px 12px grey;
+	background: #fff;
+}
+
+#contact button {
+	min-width: 80px;
+}
+
+.form-group {
+	min-width: 140px;
+}
+
+.card {
+	margin-top: 30px;
+}
+
+.rounded-circle {
+	display: block;
+	margin: auto;
+	max-height: 250px;
+}
+
+h2 {
+	padding: 20px 0 10px 0;
+}
+
+#tech img {
+	display: block;
+	max-height: 180px;
+	margin: 20px auto;
+}
+
+/* Animated images on hover */
+#tech img:hover {
+	animation: bounce 0.5s;
+}
+@keyframes bounce {
+	from,
+ 	20%,
+ 	53%,
+ 	80%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+  40%,
+  43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0);
+  }
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0);
+  }
+  90% {
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+#footer a, #footer p {
+	padding-top: 10px;
+	color: #dcdcdc;
+}
+
+#footer a:hover {
+	color: #fff;
+}
+
+.fab {
+	font-size: 36px;
+}

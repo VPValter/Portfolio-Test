@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- Font Awesome - instead of glyphicons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>My Very First Portfolio Site</title>
+  </head>
+  <body data-spy="scroll" data-target="#navbar">
+
+    <!--NAVBAR-->
+    <nav id="navbar" class="navbar navbar-expand-sm fixed-top navbar-dark">
+
+      <!--Brand/logo-->
+      <a href="#home" class="navbar-brand">LOGO</a>
+
+      <!--Hamburger toggler button-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#hamburger">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!--Navbar links, wrapped in a hamburger div-->
+      <div class="collapse navbar-collapse justify-content-end" id="hamburger">
+        <ul class="navbar-nav">
+          <li class="navbar-item"><a href="#home" class="nav-link">HOME</a></li>
+          <li class="navbar-item"><a href="#about" class="nav-link">ABOUT</a></li>
+          <li class="navbar-item"><a href="#work" class="nav-link">WORK</a></li>
+          <li class="navbar-item"><a href="#contact" class="nav-link">CONTACT</a></li>
+        </ul>
+      </div>      
+    
+    </nav>
+
+    <!--JUMBOTRON with the cover img / Why does BS use "jumbotron" twice btw? -->
+    <div id="home" class="jumbotron jumbotron-fluid">
+      <!--Containers are required when using BS default grid system. "Fluid" = full width container-->
+      <div class="container-fluid exclude">
+        <h1>HI, I AM VLADIMIR</h1>
+        <p class="exclude">Aspiring web developer, currently focusing on JavaScript, jQuery, and responsive front-end development through Bootstrap</p>
+      </div>
+    </div>
+
+    <!--ABOUT ME-->
+    <div id="about" class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-sm">
+          <img src="img/profile-new.jpg" class="img-fluid rounded-circle">
+        </div>
+        <div class="col-sm">
+          <h2>About me</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non mollis mi, ut pharetra felis. Integer sed felis eu purus commodo molestie sodales ut turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam ut velit et sem porttitor molestie. Nullam quis molestie turpis.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--WORK (PORTFOLIO)-->
+    <div id="work" class="container-fluid">
+      <h2>Projects</h2>
+      <p>Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.</p>
+      <div class="row">
+        <div class="col-sm">
+          <div class="card">
+            <img class="card-img-top" src="img/newyork.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Project 1</h4>
+              <p class="card-text">Some example text some example text. Project 1 will blow your mind!</p>
+              <a href="#" class="btn btn-primary">See Website</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card">
+            <img class="card-img-top" src="img/paris.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Project 2</h4>
+              <p class="card-text">Some example text some example text. Project 2 will blow your mind!</p>
+              <a href="#" class="btn btn-primary">See Website</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card">
+            <img class="card-img-top" src="img/sanfran.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Project 3</h4>
+              <p class="card-text">Some example text some example text. Project 3 will blow your mind!</p>
+              <a href="#" class="btn btn-primary">See Website</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Technologies-->
+    <div id="tech" class="container-fluid">
+      <h2>Technologies I use</h2>
+      <p>Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.</p>
+      <div class="row">
+        <div class="col-sm">
+          <img src="img/html5.png" alt="HTML5">
+          <h4>HTML5</h4>
+          <p>Aenan tortor est, vulputate quis leo in, vehicula rhoncus lacus.</p>
+        </div>
+        <div class="col-sm">
+          <img src="img/css3.png" alt="CSS3">
+          <h4>CSS3</h4>
+          <p>Aenan tortor est, vulputate quis leo in, vehicula rhoncus lacus.</p>
+        </div>
+        <div class="col-sm">
+          <img src="img/js.png" alt="JavaScript">
+          <h4>JavaScript &amp; jQuery</h4>
+          <p>Aenan tortor est, vulputate quis leo in, vehicula rhoncus lacus.</p>
+        </div>
+        <div class="col-sm">
+          <img src="img/bootstrap-logo.png" alt="Bootstrap">
+          <h4>Bootstrap</h4>
+          <p>Aenan tortor est, vulputate quis leo in, vehicula rhoncus lacus.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--CONTACT-->
+    <div id="contact" class="container-fluid">
+      <form class="container">
+        <h2>Contact Me</h2>
+        <div class="form-group"><input type="text" name="name" placeholder="Name" class="form-control"></div>
+        <div class="form-group"><input type="email" name="email" class="form-control" placeholder="Email"></div>
+        <div class="form-group"><textarea rows="5" class="form-control" placeholder="Message"></textarea></div>
+        <button type="button" class="btn btn-primary">Send</button>
+      </form>
+    </div>
+
+    <!--FOOTER-->
+    <footer id="footer" class="container-fluid exclude">
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-instagram"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-behance-square"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-twitter-square"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a></li>
+      </ul>
+      <p>© Copyright 2018 Vladimir Perić - All Rights Reserved</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first (min instead of slim for animate(), then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script>
+    $(document).ready(function(){
+      // Add event to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // scrollTop() gets the current vertical position
+          // offset() gets the current coordinates of the first element in the set of matched elements, relative to the document.
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 500, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+    </script>
+
+  </body>
+</html>
