@@ -10,6 +10,6 @@
 - [ ] Updating with more advanced features
 
 ### View live using GitHub Pages:
-https://vpvalter.github.io/Portfolio-Test/
+https://vpvalter.github.io/Portfolio-Test/index.html
 
 *Day 27 of my #100DaysOfCode challenge*
