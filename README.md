@@ -14,7 +14,7 @@ _Day 27 of my #100DaysOfCode challenge_
 
 ### Future plans:
 
-~~ [ ] Updating with more advanced features ~~
+~~Updating with more advanced features~~
 
 ## NOTE:
 
